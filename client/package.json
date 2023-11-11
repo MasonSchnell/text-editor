@@ -3,8 +3,7 @@
   "scripts": {
     "dev": "webpack-dev-server",
     "build": "webpack --mode production",
-    "start": "webpack --watch",
-    "other": "webpack --config webpack.config.js --watch"
+    "start": "webpack --watch"
   },
   "author": "2U",
   "license": "UNLICENSED",
