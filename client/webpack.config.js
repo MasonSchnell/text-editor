@@ -19,7 +19,7 @@ module.exports = (env, argv) => {
     isProduction &&
       new InjectManifest({
         swSrc: "./src-sw.js", // Path to your service worker file
-        swDest: "src-sw.js",
+        swDest: "service-worker.js",
       }),
     new WebpackPwaManifest({
       name: "Text Editor",
@@ -46,6 +46,7 @@ module.exports = (env, argv) => {
     output: {
       filename: "[name].bundle.js",
       path: path.resolve(__dirname, "dist"),
+      publicPath: "/",
     },
     plugins: plugins,
 
